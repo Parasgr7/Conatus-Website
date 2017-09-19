@@ -1,0 +1,1242 @@
+﻿{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Conatus</title>
+
+
+
+
+<link rel="shortcut icon" href="{% static 'conatusweb/Content/myfiles/images/12.png' %}">
+    <link href="{% static 'conatusweb/Content/myfiles/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'conatusweb/Content/myfiles/css/animation.css' %}" rel="stylesheet">
+    <link href="{% static 'conatusweb/Content/myfiles/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'conatusweb/Content/myfiles/css/mam.css' %}" rel="stylesheet">
+
+<!--gallery-->
+    <link rel='stylesheet prefetch' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+    <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/cssgallery/style.css' %}">
+    
+    <!--end-->
+<!--new nav-->
+<link href="{% static 'conatusweb/Content/myfiles/cssnn/style.css' %}" rel="stylesheet">
+    <link href="{% static 'conatusweb/Content/myfiles/jsnn/index.js' %}" rel="stylesheet">
+    <!--end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="{% static 'conatusweb/Content/myfiles/js/jquery.particleground.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'conatusweb/Content/myfiles/js/demo.js' %}"</script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/modernizr.custom.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'conatusweb/Content/myfiles/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href= "{% static 'conatusweb/Content/myfiles/fonts/font-awesome/css/font-awesome.css' %}">
+
+    <link href="{% static 'conatusweb/Content/myfiles/css/owl.carousel.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'conatusweb/Content/myfiles/css/owl.theme.css' %}" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapiscom/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+    <!--additonal-->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script-->
+    <!--script type="text/javascript" src="js/jquery.1.11.1.js"></script-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/bootstrap.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/jquery.prettyPhoto.js' %}"></script>
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/jquery.isotope.js' %}"></script>
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/jqBootstrapValidation.js' %}"></script>
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/contact_me.js' %}"></script>
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/ss.js' %}"></script>
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/owl.carousel.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/owl-carousel/owl.carousel.css' %}">
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/bootstrap.min.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'conatusweb/Content/myfiles/js/main.js' %}"></script>
+
+    <script src="{% static 'conatusweb/Content/myfiles/js/main.min.js' %}"></script>
+
+    <!-- tab flise-->
+
+    <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/csstab/normalize.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/csstab/style.css' %}">
+
+
+    <!---->
+    <!--sliderfiles-->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css'>
+    <!--end-->
+    <!--map-->
+    <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/cssmap/normalize.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/cssmap/style.css' %}">
+    <!--end-->
+    <!--notificationbox-->
+    <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/cssbox/style.css' %}">
+    <script src="{% static 'conatusweb/Content/myfiles/jsbox/index.js' %}"></script>
+    <!--end-->
+
+    <style> 
+    .video-container {
+	position:relative;
+	
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+     .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999999999999;
+    top: 0;
+    left: 0;
+    background-color:black;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: -15px;
+    right: 35px;
+  }
+        .gallery img {
+            height: 370px;
+            margin-right: 5px;
+        }
+
+
+
+        .pic {
+            width: 300px !important;
+            height: 320px !important;
+        }
+
+        .gap {
+            padding-bottom: 40px;
+        }
+
+        #fbsection1 {
+            height: 100%;
+        }
+
+        
+
+
+        #box {
+            border: 0px solid white;
+            color: #5b777f;
+            box-shadow: 0px 0px 6px 3px #908B8B;
+        }
+
+        .caption {
+            text-align: center;
+        }
+
+        .row {
+            text-align: center;
+        }
+
+        #f {
+            line-height: 50%;
+        }
+
+        #lastfooter-parent {
+            width: 100%;
+            height: auto;
+            background-color: #032731;
+        }
+
+        #lastfooter: {
+            width: 960px;
+            margin-left: 20px;
+        }
+
+        #copyright {
+            color: white;
+        }
+
+        #j {
+            margin-top: 500px;
+            iframe;
+
+        {
+            border: none;
+        }
+    </style>
+    
+    <script>
+
+        function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("popupVid");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+
+
+        function toggleVideo1(state) {
+            // if state == 'hide', hide. Else: show video
+            document.getElementById("myNav").style.width = "100%";
+            var div = document.getElementById("popupVid");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+           
+        }
+
+        
+        function openNav1() {
+            document.getElementById("myNav1").style.width = "100%";
+        }
+
+        function closeNav1() {
+            document.getElementById("myNav1").style.width = "0%";
+        }
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  
+   
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+    </script>
+
+</head>
+<body>
+    
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation" style="    background-color:transparent; border:none;">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" style="margin-top:7px; border-radius:0px;">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><strong><h2 style="font-weight:bold; color:white;    margin-top: -5px;">CONATUS</h2></strong></a>
+                </div>
+             
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                   
+                        <li class="hidden">
+                            <a class="page-scroll" href="#page-top"></a>
+                        </li>
+                        
+                        <li>
+                            <a class="page-scroll" href="#works-section"  style="color:white;">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#gallery" style="color:white;">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a class="page-scroll" href="#about" style="color:white;">About Us</a>
+                        </li>
+                        
+                        <li >
+                            <a  class="page-scroll" href="#contact-section" style="color:white;">Contact</a>
+                        </li>
+                        <li class="hidden" >
+                            <a class="page-scroll" href="#last">off</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    
+    
+    
+    
+   
+    
+    
+
+    <header style="height:100%;" class="text-center" name="home" id="i">
+
+
+        <section id="fbsection1">
+             <a target="_blank" href="https://conatus.typeform.com/to/LHoPLI" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);z-index: 483647;float: right;top: 100px;margin-top: 0px;margin-right: 5%;background-color: transparent;color: white;border-color: white;border-radius: 0px;width: 100px;height: 35px;animation: pulse 2s 200ms infinite;" class="btn btn-info" role="button">Register</a>
+       
+            <center>
+                <div id="hello" class="col-sm-12 text-centre" style="width:100%; height:auto;
+
+  position:absolute;
+
+  top:50%;
+  left:50%;
+  color: #fff;
+   transform: translate(-50%, -50%);
+  z-index: 9999;
+">
+                    <img src="{% static 'conatusweb/Content/myfiles/images/text.png' %}" width="900px" height="100px" class=" wow bounceInUp animated qw img-responsive " data-wow-delay="200ms" style="    -webkit-animation: pulse 5s infinite;
+    animation: pulse 5s infinite;" />
+                    <div onclick="location.href='#works-section';"  style="visibility: visible; animation-delay: 200ms; animation-name:bounceInUp ;  margin-bottom:-300px;
+	    border-radius: 0px;
+    background-color: transparent;
+    color: white; position: absolute;
+	left: 48%; 
+	font-size: 50px;
+	padding-top:109px;
+	-webkit-animation: bounce 3s infinite; 
+	animation: bounce 3s infinite;" class="scroll-indicator fa fa-chevron-down"  data-wow-delay="200ms"></div>
+                </div></center>
+            <div id="particles-js" style="height:100%;">
+            </div>
+            
+            <div id="myNav" class="overlay">
+    <a href="javascript:" class="closebtn" onClick="toggleVideo('hide'); ">&times;</a>
+    <div class="overlay-content" style="margin-top:130px; background-color:black;">
+     <div class="video-container" id="popupVid" style="   
+    height: 400px!important;"><iframe width="426" height="240" src="https://www.youtube.com/embed/H_wtyo-pngI?enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>   
+    </div>
+
+</div>
+                <div class="notification" onClick="toggleVideo1();"  style="padding:0px; height:100px!important;">
+                    <div class="icon" >
+
+                    </div>
+                    <p style="margin-top:20px;">
+                        Click here to know more about  Us
+                    </p>
+
+                </div>
+
+
+        </section>
+
+
+    </header>
+
+    <!-- Portfolio Section -->
+    <div id="works-section" class="text-center" style="    background-image: url({% static 'conatusweb/Content/myfiles/images/b.jpg' %});
+    background-size: cover;
+    position: relative">
+        <div class="container">
+            <!-- Container -->
+            <div class="section-title wow fadeInDown">
+                <h2>Our<strong>  Portfolios</strong></h2>
+                <hr / >
+                <div class="clearfix"></div>
+
+               <div class="col-sm-12 text-centre" style="
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+"> <p>
+                    "The only way to do great work is to love what you do."
+                                         -Steve Jobs</p></div>
+            </div>
+
+            <div class="row" style="margin-top:70px!important;">
+
+                <div class="portfolio-items">
+                    <div class="col-sm-4" style="    padding-bottom: 20px;">
+                        <div class="portfolio-item wow fadeInUp" data-wow-delay="200ms" style="    -moz-box-shadow: 0 0 10px 5px #888;
+    -webkit-box-shadow: 0 0 10px 5px#888;
+    box-shadow: 0 0 10px 5px #888;">
+                            <div class="hover-bg">
+                                <a href="{% url 'timelineHome' %}" class="portfolio-link" data-toggle="modal">
+                                    <div class="hover-text">
+                                        <h4>Events</h4>
+
+                                        <div class="clearfix"></div>
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <img  style="width:100%;height:100%; background-size:cover; background-position:center;"    src="{% static 'conatusweb/Content/myfiles/img/portfolio/e.png' %}" class="img-responsive" alt="Project Title">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="    padding-bottom: 20px;">
+                    <div class="portfolio-item wow fadeInUp" data-wow-delay="400ms" style="    -moz-box-shadow: 0 0 10px 5px #888;
+    -webkit-box-shadow: 0 0 10px 5px#888;
+    box-shadow: 0 0 10px 5px #888;">
+                        <div class="hover-bg">
+                            <a href="{% url 'magHome' %}" class="portfolio-link" data-toggle="modal">
+                                <div class="hover-text">
+                                    <h4>Magazines</h4>
+
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img   style="width:100%;height:100%; background-size:cover; background-position:center;" src="{% static 'conatusweb/Content/myfiles/img/portfolio/m.png' %}" class="img-responsive" alt="Project Title">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="    padding-bottom: 20px;">
+                    <div class="portfolio-item wow fadeInUp" data-wow-delay="600ms" style="    -moz-box-shadow: 0 0 10px 5px #888;
+    -webkit-box-shadow: 0 0 10px 5px#888;
+    box-shadow: 0 0 10px 5px #888;">
+                        <div class="hover-bg">
+                            <a href="{% url 'editorialHome' %}" class="portfolio-link" data-toggle="modal">
+                                <div class="hover-text">
+                                    <h4>Editorial</h4>
+
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img   style="width:100%;height:100%; background-size:cover; background-position:center;"  src="{% static 'conatusweb/Content/myfiles/img/portfolio/i.png' %}" class="img-responsive" alt="Project Title">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div id="gallery" class="text-center" style="background-color: #eeeeee; ">
+            <div class="container" style="width:100%;">
+                
+                <div class="section-title wow fadeInUp" style="margin-top:100px;">
+                    <h2 style="color:#333;"><strong>Conatus</strong>| Gallery</h2>
+                    <hr>
+                    <div class="clearfix"></div>
+                    <div container>
+                        <div class="carousel">
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/1.jpg' %}" alt="1st" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/2.jpg' %}" alt="2nd" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/3.jpg' %}" alt="3rd" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/4.jpg' %}" alt="4th" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/5.jpg' %}" alt="5th" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/6.jpg' %}" alt="6th" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/7.jpg' %}" alt="7th" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/8.jpg' %}" alt="8th" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/9.jpg' %}" alt="9th" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/10.jpg' %}" alt="10th" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/11.jpg' %}" alt="11th" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/12.jpg' %}" alt="flight formation" />
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="{% static 'conatusweb/Content/myfiles/gallery/13.jpg' %}" alt="flight formation" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+
+    
+
+
+<!-- About Section -->
+<!-- About Section -->
+<div id="about" style="background-color:#e7e8e9!important;">
+    <div class="container" style="width:100% !important;">
+
+    </div>
+    <div class="container" style="width:100% !important;">
+
+        <div class="panel-body" style="width:100% !important;">
+
+            <div class="container">
+                <div class="rows">
+
+                    <ul class="nav nav-pills nav-center" style="
+    text-align: center;
+">
+                        <li style="padding-left:3px;display: inline-block;float: none; padding-bottom:10px;">
+                            <a id="myHeader1" href="javascript:showonlyone('newboxes1');" class="toggle btn btn-default navbar-btn" style=" background:#032731;
+    color:white; display: inline-block;float: none;border-radius:0px;
+    ">Overview</a>
+                        </li>
+
+                        <li style=" display: inline-block;float: none;border-radius:0px;padding-bottom:10px;"><a id="myHeader2" href="javascript:showonlyone('newboxes2');" class="toggle btn btn-default navbar-btn" style=" background:#032731;
+    color:white; display: inline-block;float: none;border-radius:0px;">Mentor</a></li>
+
+
+                        <li style=" display: inline-block;float: none;border-radius:0px;padding-bottom:10px;" class="">
+                            <a class="dropdown-toggle toggle btn btn-default navbar-btn" style=" background:#032731;
+    color:white;border-radius:0px;" data-toggle="dropdown" aria-expanded="false">
+                                Members
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:showonlyone('newboxes3');">4th Year</a></li>
+                                <li><a href="javascript:showonlyone('newboxes4');">3rd Year</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!--scolling-->
+        <div class="newboxes" id="newboxes1" style="margin-top:10px;">
+
+            <div id="about-section">
+                <div class="container" style="padding-top:15px;
+">
+                    <div style="visibility: visible; animation-name: fadeInDown;margin-top:-80px;" class="section-title text-center wow fadeInDown animated" style="padding-top:10px;">
+                        <h2  style="color:#333;" ><strong>About</strong> us</h2>
+                        <hr>
+                        <div class="clearfix"></div>
+
+                    </div>
+                    <div class="row">
+                        <div style="visibility: visible; animation-name: fadeInLeft;" class="col-md-6 wow fadeInLeft animated"> <img src="{% static 'conatusweb/Content/myfiles/img/about.png' %}" class="img-responsive"> </div>
+                        <div style="visibility: visible; animation-name: fadeInRight;" class="col-md-6 wow fadeInRight animated">
+                            <h4 style="color:#333;">Who We Are</h4>
+                            <p style="color:#333;">Conatus is the technical society of Computer Science and Information Technology in Ajay Kumar Garg Engineering College which brings to its students the illumination of the knowledge glow in IT sphere with its marvellous events, workshops and seminars. Founded on 10th October, 2005 Conatus’ functioning is firmly supported by HOD of CSE department, Dr. Mamta Bhusry.</p>
+                            <div class="space"></div>
+                            <h4 style="color:#333;">What We Do</h4>
+                            <p style="color:#333;">In the last decade, Conatus has evolved as a technical base for its own members as well as the rest of the college. It has brought to the students the vast unexplored “technical horizon” within their grasp hold. Besides being the first technical society of AKGEC, Conatus leads the technological upfront by organizing a wide range of activities throughout the year.</p>
+                            <div class="space"></div><div class="list-style">
+                                <div class="row">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--scoling end-->
+        <!--scolling-->
+        <div class="newboxes" id="newboxes3">
+
+            <div id="content" style="margin-top:90px;">
+
+
+
+                <div class="row gap">
+
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="200ms" id="mm">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/1.jpg' %}" alt="..." class="img-circle team-img" width="60%" height="auto">
+                        <div class="caption">
+                            <h3>Abhineet Srivastava</h3>
+                            <p id="f">IT 4th Yr<p>
+                            <p>Web Designer</p>
+                            <ul class="list-inline">
+                                <li><a href="https://www.facebook.com/abhineet.shrivastava.33"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/absriv"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://in.linkedin.com/in/abhineet-srivastava-089291115"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/2.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Abhishek Pratap Singh</h3>
+                            <p id="f">CSE 4th Yr<p>
+                            <p>Web Designer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/3.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Aman Singhal</h3>
+                            <p id="f">CSE 4th Yr<p>
+                            <p>Android Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="800ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/4.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Anshi Goel</h3>
+                            <p id="f">IT 4th Yr<p>
+                            <p>PHP Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap">
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="200ms">
+
+                        <img src="{% static 'conatusweb/Content/myfiles/4/5.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Aviral Agarwal</h3>
+                            <p id="f">CSE 4th Yr<p>
+                            <p> .Net Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/6.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Ayushya Chitransh</h3>
+                            <p id="f">CSE 4th Yr</p>
+                            <p>.NET Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="https://fb.com/ayushya.chitransh"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/u/0/+AyushyaChitransh"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/7.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Gaurav Tripathi</h3>
+                            <p id="f">CSE 4th Yr</p><p> Web Designer</p>
+                            <ul class="list-inline">
+                                <li><a href="https://www.facebook.com/gauravzify"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/gauravzify"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/104256248023713421144"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="800ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/8.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Megha Mishra</h3>
+                            <p id="f">CSE 4th Yr<p>
+                            <p> Android Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row gap">
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="200ms">
+
+                        <img src="{% static 'conatusweb/Content/myfiles/4/9.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Prachi Singh</h3>
+                            <p id="f">IT 4th Yr<p>
+                            <p> .NET Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/10.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Rishi Ranjan Kesarwani </h3>
+                            <p id="f">CSE 4th Yr<p>
+                            <p> iOS Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="https://www.facebook.com/rkrishibhs"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/rishi_kesarwani"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/u/0/104544686636323261399"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/11.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Shivani Varshney</h3>
+                            <p id="f">IT 4th Yr<p>
+                            <p> .NET Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="https://m.facebook.com/shivani.varshney.507679"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="800ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/4/12.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Vyom Kapil</h3>
+                            <p id="f">CSE 4th Yr<p>
+                            <p> Python Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+                <!--end-->
+
+
+
+
+
+
+
+            </div>
+        </div><!--scoling end-->
+        <!--3rd -->
+
+        <div class="newboxes" id="newboxes4">
+
+            <div id="content" style="margin-top:90px;">
+
+
+
+                <div class="row gap">
+
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="200ms" id="mm">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/1.JPG' %}" alt="..." class="img-circle team-img" width="60%" height="auto">
+                        <div class="caption">
+                            <h3>Archit Garg</h3>
+                            <p id="f">CSE 3th Yr<p>
+                            <p>Web Designer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/2.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Arjun Pandey</h3>
+                            <p id="f">CSE 3th Yr<p>
+                            <p>Android Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="200ms">
+
+                        <img src="{% static 'conatusweb/Content/myfiles/3/5.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Manisha Agarwal</h3>
+                            <p id="f">IT 3th Yr<p>
+                            <p> Java Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/6.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Money Chaudhary</h3>
+                            <p id="f">IT 3th Yr<p>
+                            <p>Android Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="row gap">
+                    
+                    
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/7.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Neeraj Kumar Rawat </h3>
+                            <p id="f">CSE 3th Yr<p>
+                            <p> .NET Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="800ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/8.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Priyanka Sharma</h3>
+                            <p id="f">IT 3th Yr<p>
+                            <p> Java Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/3.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Rishabh Barman</h3>
+                            <p id="f">CSE 3th Yr<p>
+                            <p> Java Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/10.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Sanjeevani Shukla</h3>
+                            <p id="f">CSE 3th Yr<p>
+                            <p> Java Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap">
+                    >
+                    
+                    
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/11.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Sheenam Kumar</h3>
+                            <p id="f">IT 3th Yr<p>
+                            <p> .NET Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/14.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Shubham Yadav</h3>
+                            <p id="f">IT 3th Yr<p>
+                            <p>Web Designer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="800ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/12.JPG' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Srijan Srivstava</h3>
+                            <p id="f">IT 3th Yr<p>
+                            <p> Java Developer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms">
+                        <img src="{% static 'conatusweb/Content/myfiles/3/13.jpg' %}" alt="..." class="img-circle team-img">
+                        <div class="caption">
+                            <h3>Vibhav Kaushik</h3>
+                            <p id="f">CSE 3th Yr<p>
+                            <p> Web Designer</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row gap">
+
+                    
+                    
+                   <!--rajat-->
+
+                </div><!--row-->
+
+
+
+
+
+
+
+
+            </div>
+        </div><!--scoling end-->
+
+
+        <div class="newboxes" id="newboxes2" style="margin-top:10px; margin-bottom: 37px;">
+
+            <div id="content" style="margin-top:140px;">
+                <div id="row">
+                    <div class="row" style="padding-bottom:55px;">
+                       
+                        <div style="visibility: visible; animation-name: fadeInUp;" >
+                          <center>  <div id="box" class="img-responsive" style="width:750px;">
+                                <div class="media">
+                                    <div class="col-md-6" style="width:350px;">
+                                        <center>
+                                            <a href="#">
+                                                <img class="media-object" src="{% static 'conatusweb/Content/myfiles/id/m.jpg' %}" alt="...">
+                                            </a>
+                                        </center>
+                                    </div>
+                                    <div class="col-md-6" style="padding-top: 30px;
+    padding-right: 30px;">
+                                        <h2 class="media-heading"  style="color:black;">Dr. MAMTA BHUSRY</h2>
+                                        <h3 style="color:black;">HoD CSE</h3>
+                                        <p style="color:black;">
+                                        
+                                            She has always been a guiding light in all the technical endeavours made by us.
+                                            It is her immense support and  cooperation that has made us touch tremendous heights right from our inclusion into the technical framework.
+
+
+
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div></center>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+            </div><!--newboxes3-->
+
+
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div id="contact-section"  class="text-center">
+    <div class="container">
+        <div class="section-title wow fadeInDown" style="padding-top:60px!important;">
+            <h2 style="color:white;"><strong>Contact</strong> us</h2>
+            <hr>
+
+        </div>
+        <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="200ms">
+            <div class="col-md-4">
+                <i class="fa fa-map-marker fa-2x"></i>
+                <p style="color:white;">
+                    Hapur Bypass,<br />
+                    Ghaziabad,<br />
+                    Uttar Pradesh 201009
+                </p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-envelope-o fa-2x"></i>
+                <p style="color:white;">teamconatus@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-facebook fa-2x"></i>
+                <p style="color:white;">www.facebook.com/conatus.akg</p>
+            </div>
+            <div class="clearfix"></div>
+         </div>
+        <!--@model main1.Models.EmailFormModel -->
+        <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="400ms">
+            <h3 style="color:white;">Leave us a message</h3>
+            <form name="sentMessage" id="contactForm" method = "post" action = "{% url 'getmessage' %}">
+                {% csrf_token %}
+
+<!-- @using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken() -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                           <input type="text" name = "messageName" id="name" class="form-control" placeholder="Name" required="required">
+                            <!-- @Html.TextBoxFor(m => m.FromName, new { @class = "form-control",
+                           @type = "text",
+                           required = "required",
+                           @placeholder = " Enter Name " })
+                             -->
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" name = "messageEmail" id="email" class="form-control" placeholder="Email" required="required">
+                            <!-- @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control",
+                           @type = "email",
+                           required = "required",
+                           @placeholder = "Enter  Email" }) -->
+                          
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                   <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                    <!-- @Html.TextAreaFor(m => m.Message, new { @class = "form-control",
+                   @type = "text",
+                   required = "required",
+                   @placeholder = "Enter Message" }) -->
+                 
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div id="success"></div>
+                <!--<button type="submit" class="btn btn-default">Send Message</button>-->
+    <div class="form-group">
+        
+            <input type="submit" class="btn btn-default" value="Send Message" />
+     
+    </div>
+</form>
+    
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<div id="mack-map" style="height:250px! important;"></div>
+
+<div id="contact-section" class="text-center">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="400ms">
+
+            <div class="social">
+                <ul>
+                    <li><a   target="_blank" href="https://www.youtube.com/channel/UCx47CEF3DpgTrlbS502Q83Q"><i class=" fa fa-youtube-play"></i></a></li>
+                    <li><a  target="_blank" href="https://www.facebook.com/conatus.akg/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a  target="_blank" href="https://twitter.com/conatus_akg"><i class="fa fa-twitter"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="last">
+    </div>
+
+
+
+
+
+
+
+
+
+<script>
+		particlesJS('particles-js', {
+    particles: {
+        color: '#abab81',
+        shape: 'circle',
+        opacity: 1,
+        size: 2.5,
+        size_random: true,
+        nb: 100,
+        line_linked: {
+            enable_auto: true,
+            distance: 340,
+            color: '#4f5b60',
+            opacity: 0.5,
+            width: 1,
+            condensed_mode: {
+                enable: true,
+                rotateX: 600,
+                rotateY: 600
+            }
+        },
+        anim: {
+            enable: true,
+            speed: 3.0
+        }
+    },
+    interactivity: {
+        enable: false,
+        mouse: {
+            distance: 100
+        },
+        detect_on: 'canvas',
+        mode: 'grab'
+    },
+    retina_detect: true
+});
+</script>
+
+<!-- jQuery Plugin -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
+<script>
+	function showonlyone(thechosenone) {
+
+         $('.newboxes').each(function(index) {
+
+              if ($(this).attr("id") == thechosenone) {
+
+                   $(this).show(200);
+
+              }
+
+              else {
+
+                   $(this).hide(600);
+
+              }
+
+         });
+
+    }
+
+</script>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js'></script>
+<script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+<script src="{% static 'conatusweb/Content/myfiles/jsgallery/index.js' %}"></script>
+
+<script src="{% static 'conatusweb/Content/myfiles/js/index.js' %}"></script>
+
+<!--map-->
+
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDNTSMEOij97Zpc3vSSkP1pXOIWg8tH-gA&sensor=false'></script>
+
+<script src="{% static 'conatusweb/Content/myfiles/jsmap/index.js' %}"></script>
+<!--end-->
+<script src="{% static 'conatusweb/Content/myfiles/jswe/index.js' %}"></script>
+
+    </body>
+</body>
+</html>

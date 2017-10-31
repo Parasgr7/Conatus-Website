@@ -15,7 +15,7 @@ def timeline(request):
 	return render(request,templateName, {})
 
 def mag(request):
-	templateName = 'mag.html'
+	templateName = 'Mag.html'
 	return render(request,templateName, {})
 
 def getMessage(request):

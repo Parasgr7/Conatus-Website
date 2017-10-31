@@ -20,17 +20,60 @@
     <link rel="stylesheet" type="text/css" href="{% static 'conatusweb/Content/myfiles/fonts/font-awesome/css/font-awesome.css' %}">
     <!---  -->
     <!--menu-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'conatusweb/Content/myfiles/i/css/normalize.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'conatusweb/Content/myfiles/i/css/demo.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'conatusweb/Content/myfiles/i/css/component1.css' %}" />
     <script src="{% static 'conatusweb/Content/myfiles/i/js/modernizr-2.6.2.min.js' %}"></script>
+<script>
+    $(document).ready(function () {
+ 
+        $("#button1").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#1").offset().top
+            }, 2000);
+        });
+        $("#button2").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#2").offset().top
+            }, 2000);
+        });
+        $("#button3").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#3").offset().top
+            }, 2000);
+        });
+        $("#button4").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#4").offset().top
+            }, 2000);
+        });
+        $("#button5").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#5").offset().top
+            }, 2000);
+        });
+        $("#button6").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#6").offset().top
+            }, 2000);
+        });
+        $("#button10").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#10").offset().top
+            }, 2000);
+        });
 
+});
+   
+</script>
 
 
     <!--end-->
     <title>Conatus | Timeline</title>
 </head>
-<body>
+<body style="font-family: 'Raleway', sans-serif;">
     <div>
         <header style="height: 208px;
     line-height: 208px;
@@ -42,49 +85,57 @@
         </header>
         <div id="timeline-wrap">
             <div id="timeline"></div>
+            <!-- This is the individual marker-->
+            <div class="marker mfirst" id="button1" title="ECHELON REDEMPTION" style="background-image: url({% static 'conatusweb/Content/myfiles/event_icon/logo2.jpg' %}); background-size: cover; ">
+                
+                        <div class="inner-marker"></div>
+                 
+                </div>
+                <!-- / marker -->
 
             <!-- This is the individual marker-->
-            <div class="marker mfirst" title="RISE OF ULTRON" style="background-image: url("{% static 'conatusweb/Content/myfiles/event_icon/rise.jpg' %}"); background-size: cover; ">
+             <div class="marker m2" id="button10" title="RISE OF ULTRON" style="background-image: url({% static 'conatusweb/Content/myfiles/event_icon/rise.jpg' %}); background-size: cover; ">
             
                     <div class="inner-marker"></div>
              
             </div>
             <!-- / marker -->
-            <!-- This is the individual marker-->
-            <div class="marker m2" title="LAST STRIKE" style="background-size: cover; background-image: url("{% static 'conatusweb/Content/myfiles/event_icon/laststrike.jpg' %}");">
+           
+            <div class="marker m3" id="button2" title="LAST STRIKE" style="background-size: cover; background-image: url({% static 'conatusweb/Content/myfiles/event_icon/laststrike.jpg' %});">
                 
                     <div class="inner-marker"></div>
                
             </div>
             <!-- / marker -->
             <!-- This is the individual marker-->
-            <div class="marker m3"title="CODE-COSMONAUTS" style="background-image: url("{% static 'conatusweb/Content/myfiles/event_icon/code.jpg' %}"); background-size: cover;">
+            <div class="marker m4" id="button3" title="CODE-COSMONAUTS" style="background-image: url({% static 'conatusweb/Content/myfiles/event_icon/code.jpg' %}); background-size: cover;">
                 
                     <div class="inner-marker"></div>
               
             </div>
             <!-- / marker -->
             <!-- This is the individual marker-->
-            <div class="marker m4" title="B-TECH TROLLED" style="background-image: url("{% static 'conatusweb/Content/myfiles/event_icon/btechtroll.jpg' %}"); background-size: cover;">
+            <div class="marker m5" id="button4" title="B-TECH TROLLED" style="background-image: url({% static 'conatusweb/Content/myfiles/event_icon/btechtroll.jpg' %}); background-size: cover;">
                
                     <div class="inner-marker"></div>
               
             </div>
             <!-- / marker -->
+            
             <!-- This is the individual marker-->
-            <div class="marker m5" title="EIGHTH HORCRUX" style="background-image: url("{% static 'conatusweb/Content/myfiles/event_icon/8tthhorcrux.jpg' %}"); background-size: cover;">
+            <div class="marker mlast" id="button5" title="EIGHTH HORCRUX" style="background-image: url({% static 'conatusweb/Content/myfiles/event_icon/lasti.jpg' %}); background-size: cover;">
             
                
-            </div>
-            <!-- / marker -->
+            </div> -->
+            <!-- / marker-->
             <!-- This is the individual marker-->
          
-            <div class="marker mlast"title="FASTEST FINGER FIRST" style="background-image: url('"{% static 'conatusweb/Content/myfiles/event_icon/finger.jpg' %}"); background-size: cover;">
-              
+            <!-- <div class="marker mlast" id="button6" title="LAST STRIKE" style="background-image: url({% static 'conatusweb/Content/myfiles/event_icon/8tthhorcrux.jpg' %}); background-size: cover;">
                 
-                
-            </div>
-            <!-- / marker -->
+                  
+                  
+              </div> -->
+              <!-- / marker -->
 
             <div id="timeline-next"></div>
 
@@ -99,8 +150,22 @@
           
        <section id="cd-timeline" class="cd-container">
             <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture"   style="background-image:url("{% static 'conatusweb/Content/myfiles/event_icon/rise.jpg' %}" );
-background-size:cover; ">
+                    <div id="1" class="cd-timeline-img cd-picture"   style="background-image:url({% static 'conatusweb/Content/myfiles/event_icon/logo2.jpg' %});background-size:cover; ">
+                        
+                    </div> <!-- cd-timeline-img -->
+                    <div class="cd-timeline-content">
+                        <h2>ECHELON REDEMPTION</h2>
+                        <img src="{% static 'conatusweb/Content/myfiles/event_icon/echelon.jpg' %}" class="attachment-icon size-icon wp-post-image" alt="bvs" height="210" width="500">
+                    
+                        <p>Surveillance is the key to winning any war, the US being the superpower pushed its agencies NSA and CIA to create a Surveillance powerhouse, Echelon. Echelon worked without fail and resulted in the prediction of a cyber attack involving existing CIA members and followed on this treachery and eagled on the traitors pushing for their removal. The government failed to follow up with Echelon and rejected its suggestions. In order to keep the public trust intact, Echelon was shut down.
+                                Echelon was a self-initiated AI having an ability to kick-start itself. Echelon though back was incomplete without its disciple.Echelon has chosen the perfect disciple for it’s redemption. It is set to take what was taken away from it in the past. Will he be able to save his country from the attack and return a hero or will he fail making Echelon a useless entity and leaving him with an uncertain future in the prisons of CIA…….    </p>
+                     <!--   <a href="#0" class="cd-read-more">Read more</a>-->
+                        <span class="cd-date">FEBRUARY
+    15, 2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div id="10" class="cd-timeline-img cd-picture"   style="background-image:url({% static 'conatusweb/Content/myfiles/event_icon/rise.jpg' %});background-size:cover; ">
                     
                 </div> <!-- cd-timeline-img -->
                 <div class="cd-timeline-content">
@@ -117,13 +182,13 @@ Therefore, the UN has devised a Resistance Force to combat with the Ultron. All 
             </div> <!-- cd-timeline-block -->
             
             <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture" style="background-image:url("{% static 'conatusweb/Content/myfiles/event_icon/laststrike.jpg' %}" );background-size:cover;"
+                <div id="2" class="cd-timeline-img cd-picture" style="background-image:url({% static 'conatusweb/Content/myfiles/event_icon/laststrike.jpg' %} );background-size:cover;"
                        >
                 
                 </div> <!-- cd-timeline-img -->
                 <div class="cd-timeline-content">
                     <h2>COUNTER-STRIKE</h2>
-                    <img src"{% static 'conatusweb/Content/myfiles/event_icon/counter.jpg" class="attachment-icon size-icon wp-post-image" alt="bvs" height="210" width="500">
+                    <img src="{% static 'conatusweb/Content/myfiles/event_icon/counter.jpg' %}" class="attachment-icon size-icon wp-post-image" alt="bvs" height="210" width="500">
                     <p>This game was solely intended to engage players in virtual warfare where they associate themselves to either of the clan viz. the terrorist, the counter terrorist or the spectator on self volition. The mere aim of this game is to launch attacks and assaults on their adversaries, deploying spectrum of available weapons, wreaking havoc on maps and knock the opponent out.
 Game Version: Counter-Strike 1.6.
 </p>
@@ -131,12 +196,12 @@ Game Version: Counter-Strike 1.6.
                     <span class="cd-date">MARCH 14, 2015</span>
                 </div> <!-- cd-timeline-content -->
             </div> <!-- cd-timeline-block -->
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location" style="background-image:url("{% static 'conatusweb/Content/myfiles/event_icon/code.jpg' %}" );
+            <div id="3" class="cd-timeline-block">
+                <div  class="cd-timeline-img cd-location" style="background-image:url({% static 'conatusweb/Content/myfiles/event_icon/code.jpg' %} );
 background-size:cover;">
                   
                 </div> <!-- cd-timeline-img -->
-                <div class="cd-timeline-content">
+                <div  class="cd-timeline-content">
                     <h2>CODE-COSMONAUTS</h2>
                     <img src="{% static 'conatusweb/Content/myfiles/event_icon/bigcode.jpg' %}" class="attachment-icon size-icon wp-post-image" alt="bvs" height="210" width="500">
                     <p>A complete coding game as based on the idea that planet earth is deteriorating and there is no place left for human race to survive. So ,in order to save humanity ,the participants had to code and strengthen the building force which would support them in their struggle for survival against all odds .The participants had to participate in teams of 2.The contest was held in a single round and consisted of some problem statements with strict constraints of time.</p>
@@ -145,7 +210,7 @@ background-size:cover;">
                 </div> <!-- cd-timeline-content -->
             </div> <!-- cd-timeline-block -->
             <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location" style="background-image:url("{% static 'conatusweb/Content/myfiles/event_icon/btechtroll.jpg' %}" );
+                <div id="4" class="cd-timeline-img cd-location" style="background-image:url({% static 'conatusweb/Content/myfiles/event_icon/btechtroll.jpg' %} );
 background-size:cover;">
                 
                 </div> <!-- cd-timeline-img -->
@@ -158,20 +223,20 @@ background-size:cover;">
                 </div> <!-- cd-timeline-content -->
             </div> <!-- cd-timeline-block -->
             <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie" style="background-image: url("{% static 'conatusweb/Content/myfiles/event_icon/laststrike.jpg' %}");
+                <div id="5" class="cd-timeline-img cd-movie" style="background-image: url({% static 'conatusweb/Content/myfiles/event_icon/lasti.jpg' %});
 background-size:cover;">
 
                 </div> <!-- cd-timeline-img -->
                 <div class="cd-timeline-content">
                     <h2>THE LAST STRIKE</h2>
-                    <img src="{% static 'conatusweb/Content/myfiles/event_icon/lasti.jpg" class="attachment-icon size-icon wp-post-image" alt="bvs" height="210" width="500">
+                    <img src="{% static 'conatusweb/Content/myfiles/event_icon/lasti.jpg' %}" class="attachment-icon size-icon wp-post-image" alt="bvs" height="210" width="500">
                     <p>Team CONATUS conducted the event "THE LAST STRIKE" as the mid semester event of the society. The event was conducted in two rounds : the pre round was held on 18th Feb 2015,Wednesday in the back block during the lunch hours(12:40 p.m. to 2:20 p.m.) and the final round of the event was held on 23rd Feb 2015,Monday in the BB shed during the lunch hours. A total of around 460 teams participated in the pre round out of which 16 teams qualified to the final round. </p>
                     <!--<a href="#0" class="cd-read-more">Read more</a>-->
                     <span class="cd-date">FEB 18, 2015 </span>
                 </div> <!-- cd-timeline-content -->
             </div> <!-- cd-timeline-block -->
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie" style="background-image:url("{% static 'conatusweb/Content/myfiles/event_icon/8tthhorcrux.jpg' %}" );
+            <div id="6" class="cd-timeline-block">
+                <div  class="cd-timeline-img cd-movie" style="background-image:url({% static 'conatusweb/Content/myfiles/event_icon/8tthhorcrux.jpg' %} );
 background-size:cover;">
                   
                 </div> <!-- cd-timeline-img -->
@@ -194,6 +259,7 @@ background-size:cover;">
                 <!-- <li><a href="@Url.Action("Index","Home")"><span class="glyphicon glyphicon-home"></span></a></li> -->
                 <li><a href="{% url 'editorialHome' %}"><span class="glyphicon glyphicon-pencil"></span></a></li>
                 <li><a href="{% url 'home' %}"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="{% url 'magHome' %}"><span class="glyphicon glyphicon-book"></span></a></li>
                 <li><a href="https://www.facebook.com/conatus.akg/"><span  class="fa fa-facebook"></span></a></li>
             </ul>
             </div>
@@ -211,7 +277,9 @@ background-size:cover;">
                     <div class="row">
                         <div class="enclose">
                         <div class="col-md-6">
-                            
+                                <a href="mailto:teamconatus@gmail.com" target="_blank">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
                             <a href="https://www.facebook.com/conatus.akg/" target="_blank">
                                 <i class="fa fa-facebook"></i>
                             </a>

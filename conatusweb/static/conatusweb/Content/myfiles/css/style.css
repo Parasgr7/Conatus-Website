@@ -818,7 +818,12 @@ padding-bottom: 0px;
 #newboxes3{
 	display:none;
 	
-}/* Preloader */
+}
+#newboxes15{
+	display:none;
+	
+}
+/* Preloader */
 
 #preloader {
     position:fixed;

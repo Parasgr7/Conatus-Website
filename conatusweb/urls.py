@@ -6,7 +6,8 @@ urlpatterns = [
     url(r'^editorial/', views.editorial, name = "editorialHome"),
     url(r'^mag/', views.mag, name = "magHome"),
     url(r'^timeline/', views.timeline, name = "timelineHome"),
-    url(r'^sendmessage/', views.getMessage, name = "getmessage"),    
-    
+    url(r'^sendmessage/', views.getMessage, name = "getmessage"),   
+    url(r'^register', views.register, name = "registration"),
+    url(r'^saveform/', views.saveform, name = "saveform")
     
     ]

@@ -3,3 +3,5 @@ from .models import*
 
 admin.site.register(Message)
 
+admin.site.register(SaveForm)
+

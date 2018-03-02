@@ -58,6 +58,7 @@
 
     <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/csstab/normalize.css' %}">
 
+    <!-- <link href="{% static 'conatusweb/Content/myfiles/creative.css' %}" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/csstab/style.css' %}">
 
@@ -70,15 +71,41 @@
     <!--map-->
     <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/cssmap/normalize.css' %}">
 
+	
+    <link href="{% static 'conatusweb/Content/myfiles/css/animate.css' %}" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/cssmap/style.css' %}">
     <!--end-->
     <!--notificationbox-->
     <link rel="stylesheet" href="{% static 'conatusweb/Content/myfiles/cssbox/style.css' %}">
     <script src="{% static 'conatusweb/Content/myfiles/jsbox/index.js' %}"></script>
+    <script src="{% static 'conatusweb/Content/myfiles/js/jquery.textillate.js' %}"></script>
+    <script src="{% static 'conatusweb/Content/myfiles/js/jquery.lettering.js' %}"></script>
+    
     <!--end-->
 
-    <style> 
+    <style>
+
+    .intrinsic-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    border-style: none;
+}
+
+
+
+.intrinsic-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
     .video-container {
 	position:relative;
 	
@@ -273,6 +300,14 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+$(function () {
+    $('.demo').textillate({
+        in: {
+            effect: 'rotateIn'
+        }
+    });
+})
     </script>
 
 </head>
@@ -328,17 +363,14 @@ function closeNav() {
     
     
     
-    
-   
-    
+        
     
 
     <header style="height:100%;" class="text-center" name="home" id="i">
 
 
         <section id="fbsection1">
-             <!-- <a target="_blank" href="https://conatus.typeform.com/to/LHoPLI" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);z-index: 483647;float: right;top: 100px;margin-top: 0px;margin-right: 5%;background-color: transparent;color: white;border-color: white;border-radius: 0px;width: 100px;height: 35px;animation: pulse 2s 200ms infinite;" class="btn btn-info" role="button">Register</a>
-        -->
+             <a target="_blank" href="{% url 'registration' %}" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);z-index: 483647;float: right;top: 100px;margin-top: 0px;margin-right: 5%;background-color: transparent;color: white;border-color: white;border-radius: 0px;width: 100px;height: 35px;animation: pulse 2s 200ms infinite;" class="btn btn-info" role="button">Register</a>
             <center>
                 <div id="hello" class="col-sm-12 text-centre" style="width:100%; height:auto;
 
@@ -350,7 +382,9 @@ function closeNav() {
    transform: translate(-50%, -50%);
   z-index: 9999;
 ">
-                    <img src="{% static 'conatusweb/Content/myfiles/images/text.png' %}" width="900px" height="100px" class=" wow bounceInUp animated qw img-responsive " data-wow-delay="200ms" style="    -webkit-animation: pulse 5s infinite;
+              
+
+<img src="{% static 'conatusweb/Content/myfiles/images/text.png' %}" width="900px" height="100px" class=" wow bounceInUp animated qw img-responsive " data-wow-delay="200ms" style="    -webkit-animation: pulse 5s infinite;
     animation: pulse 5s infinite;" />
                     <div onclick="location.href='#works-section';"  style="visibility: visible; animation-delay: 200ms; animation-name:bounceInUp ;  margin-bottom:-300px;
 	    border-radius: 0px;
@@ -362,7 +396,9 @@ function closeNav() {
 	-webkit-animation: bounce 3s infinite; 
 	animation: bounce 3s infinite;" class="scroll-indicator fa fa-chevron-down"  data-wow-delay="200ms"></div>
                 </div></center>
-            <div id="particles-js" style="height:100%;">
+            <!-- <div id="particles-js" style="height:100%;"> -->
+                 <iframe scrolling="no" class="intrinsic-container" src="{% static 'conatusweb/Content/myfiles/animate.html' %}"></iframe>
+   
             </div>
             
             <div id="myNav" class="overlay">
@@ -384,13 +420,13 @@ function closeNav() {
                 </div>
 
 
-        </section>
+        </section> 
 
 
     </header>
 
     <!-- Portfolio Section -->
-    <div id="works-section" class="text-center" style="    background-image: url({% static 'conatusweb/Content/myfiles/images/b.jpg' %});
+    <div id="works-section" class="text-center" style="    background-image: url({% static 'conatusweb/Content/myfiles/images/aba.svg' %});
     background-size: cover;
     position: relative">
         <div class="container">
@@ -404,9 +440,9 @@ function closeNav() {
     position: relative;
     width: 100%;
     overflow-x: hidden;
-"> <p>
-                    "The only way to do great work is to love what you do."
-                                         - Steve Jobs</p></div>
+"> <p><h4>
+                    "When something is important enough, you do it even if the odds are not in your favour."
+                </h4><h3>- Elon Musk</h3></p></div>
             </div>
 
             <div class="row" style="margin-top:70px!important;">
@@ -514,12 +550,12 @@ function closeNav() {
                             <div class="carousel-cell">
                                 <img src="{% static 'conatusweb/Content/myfiles/gallery/11.jpg' %}" alt="11th" />
                             </div>
-                            <div class="carousel-cell">
+                            <!-- <div class="carousel-cell">
                                 <img src="{% static 'conatusweb/Content/myfiles/gallery/12.jpg' %}" alt="flight formation" />
                             </div>
                             <div class="carousel-cell">
                                 <img src="{% static 'conatusweb/Content/myfiles/gallery/13.jpg' %}" alt="flight formation" />
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -533,7 +569,7 @@ function closeNav() {
 
 <!-- About Section -->
 <!-- About Section -->
-<div id="about" style="background-color:#e7e8e9!important;">
+<div id="about" style="background-color:#e7e8e9!important;background-image:url({% static 'conatusweb/Content/myfiles/images/aba.svg' %});background-repeat: no-repeat;">
     <div class="container" style="width:100% !important;">
 
     </div>
@@ -570,11 +606,11 @@ function closeNav() {
                             </ul>
                         </li>  -->
                         <a class="toggle btn btn-default navbar-btn" style=" background:#032731;
-                        color:white; display: inline-block;float: none;border-radius:0px;padding-bottom:10px;" href="javascript:showonlyone('newboxes4')" >4th Year</a>
+                        color:white; display: inline-block;float: none;border-radius:0px;padding:8px;" href="javascript:showonlyone('newboxes4')" >4<sup>th</sup> Year</a>
                         <a class="toggle btn btn-default navbar-btn" style=" background:#032731;
-                        color:white; display: inline-block;float: none;border-radius:0px;padding-bottom:10px;" href="javascript:showonlyone('newboxes3')" >3rd Year</a>
+                        color:white; display: inline-block;float: none;border-radius:0px;padding:8px;" href="javascript:showonlyone('newboxes3')" >3<sup>rd</sup> Year</a>
                         <a class="toggle btn btn-default navbar-btn" style=" background:#032731;
-                        color:white; display: inline-block;float: none;border-radius:0px;padding-bottom:10px;" href="javascript:showonlyone('newboxes15')" >2nd Year</a>
+                        color:white; display: inline-block;float: none;border-radius:0px;padding:8px;" href="javascript:showonlyone('newboxes15')" >2<sup>nd</sup> Year</a>
                         <a class="toggle btn btn-default navbar-btn" style=" background:#032731;
                         color:white; display: inline-block;float: none;border-radius:0px; visibility:hidden" href="javascript:showonlyone('newboxes15')" >2nd Year</a>
                     
@@ -615,7 +651,7 @@ function closeNav() {
             </div>
         </div><!--scoling end-->
         <!--scolling-->
-        <!--3rd -->
+        <!--3rd-->
 
         <div class="newboxes" id="newboxes4">
 
@@ -1523,7 +1559,7 @@ function closeNav() {
         line_linked: {
             enable_auto: true,
             distance: 340,
-            color: '#4f5b60',
+            color: '#000',
             opacity: 0.5,
             width: 1,
             condensed_mode: {

@@ -190,7 +190,7 @@ hr {
 
 /* Home Style */
 #i {
-    background: url(../images/t.png) no-repeat bottom center;
+    /* background: url(../images/t.png) no-repeat bottom center; */
     background-size: cover;
     color: #d9e0e2;
     position: relative;
